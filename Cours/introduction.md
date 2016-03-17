@@ -15,7 +15,7 @@ Une fois après l'installation de git penser à configurer le nom d'utilisateur 
 
 `git init` pour créer un dépôt vide
 
-`git clone` TODO
+`git clone` pour dupliquer un repository (d'un dossier ou machine à une autre)
 
 ## Obtenir des informations sur le dépôt
 
