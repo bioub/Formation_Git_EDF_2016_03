@@ -33,6 +33,10 @@ Une fois après l'installation de git penser à configurer le nom d'utilisateur 
 
 `git add *` tous les fichiers
 
+## Retirer un fichier de la staging area
+
+`git rm --cached fichier.txt` ou `git reset HEAD fichier.txt` si le fichier est déjà indexé (déjà versionné)
+
 ## Versionner
 
 `git commit -m "Message le plus précis possible"` pour versionner les changements surveillés (ajouté) dans la staging area
