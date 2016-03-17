@@ -25,3 +25,11 @@ Une fois après l'installation de git penser à configurer le nom d'utilisateur 
 
 `git log` pour voir l'historique
 
+## Ajouter un fichier à la staging area (changement à prendre en compte pour la prochaine version)
+
+`git add unFichier.ext` ou `git stage unFichier.ext` (alias)
+
+`git add *.ext` tous les fichiers qui ont l'extension ext
+
+`git add *` tous les fichiers
+
