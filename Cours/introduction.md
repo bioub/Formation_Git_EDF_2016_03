@@ -81,3 +81,15 @@ Pour ajouter qu'un partie d'un fichier utiliser `git add -p unfichier.txt`, un m
 
 `git stash drop` pour supprimer (à faire manuellement en cas de conflit sur `git stash pop`)
 
+## Indiquer les fichiers à ne pas versionner
+
+Créer un fichier .gitignore à la racine ou dans un sous répertoire (si on souhaite ignorer que pour ce sous répertoire)
+
+Et indiquer sur chaque le nom ou les chemins de fichiers/dossiers à ignorer.
+
+Ex :
+
+	password.txt
+	dependencies/
+	*.tmp
+	
