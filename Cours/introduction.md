@@ -33,6 +33,8 @@ Une fois après l'installation de git penser à configurer le nom d'utilisateur 
 
 `git add *` tous les fichiers
 
+Pour ajouter qu'un partie d'un fichier utiliser `git add -p unfichier.txt`, un mode interactif s'affiche, vous devrez choisir morceau par morceau (hunk), `y` pour ajouter le morceau, `n` pour ne pas l'ajouter `?` pour afficher la doc des autres options
+
 ## Retirer un fichier de la staging area
 
 `git rm --cached fichier.txt` ou `git reset HEAD fichier.txt` si le fichier est déjà indexé (déjà versionné)
