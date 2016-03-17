@@ -55,3 +55,15 @@ Pour ajouter qu'un partie d'un fichier utiliser `git add -p unfichier.txt`, un m
 
 `git checkout HEAD^^` revenir 2 versions en arrière ou  `git checkout HEAD~2`
 
+## Voir les différences
+
+`git diff` différence entre working directory et le dernier commit
+
+`git diff --cached` différence entre la staging area et le dernier commit
+
+`git diff --word-diff` pour voir les changements mot par mot
+
+`git diff --color-words=.` pour voir les changements lettre par lettre
+
+`git diff HEAD HEAD^` pour voir les différence entre le dernier commit et le précédent
+
