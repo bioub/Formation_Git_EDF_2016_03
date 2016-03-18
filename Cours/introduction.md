@@ -146,6 +146,15 @@ On peut aussi réécrire un commit avec `edit` :
   * `git commit -m "Message"`, et éventuellement reprendre à git add
   * `git rebase --continue` pour valider les changements ou `git rebase --abort` pour annuler les modifications en cas de bêtises
   
+## Les branches
+
+Les branches permettent de dupliquer une arboscence de commit pour travailler sur une nouvelle fonctionnalité, ou la correction sans prendre le risque de casser l'historique.
+
+`git branch` pour lister les branches
+
+`git checkout -b nouvelle-branche` pour créer nouvelle-branche à partir de la branche courante
+
+`git checkout nom-de-la-branche` pour changer de branche
 
 
 
