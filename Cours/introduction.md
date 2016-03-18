@@ -67,3 +67,17 @@ Pour ajouter qu'un partie d'un fichier utiliser `git add -p unfichier.txt`, un m
 
 `git diff HEAD HEAD^` pour voir les différence entre le dernier commit et le précédent
 
+## Mettre de côté des modification (sans les placer dans l'historique)
+
+`git stash list` pour voir les changements déjà mis de côté
+
+`git stash save -u "Description des changements"` pour mettre de côté des modifications en dehors de l'historique (`-u` pour garder les fichiers non surveillés -- untracked --)
+
+`git stash pop` pour rappatrier le dernier stash sauvegardé
+
+`git stash pop stash@{1}` pour rappatrier le stash stash@{1} (voir git stash list)
+
+** Attention : ** si conflit il faut éditer manuellement le fichier et retirer les lignes <<<<<<, ======, >>>>>>>> puis faire un commit.
+
+`git stash drop` pour supprimer (à faire manuellement en cas de conflit sur `git stash pop`)
+
