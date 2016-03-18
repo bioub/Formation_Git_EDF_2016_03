@@ -33,3 +33,6 @@ Une fois après l'installation de git penser à configurer le nom d'utilisateur 
 
 `git add *` tous les fichiers
 
+## Versionner
+
+`git commit -m "Message le plus précis possible"` pour versionner les changements surveillés (ajouté) dans la staging area
