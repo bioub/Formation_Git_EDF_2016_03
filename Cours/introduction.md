@@ -93,3 +93,49 @@ Ex :
 	dependencies/
 	*.tmp
 	
+## Réécrire l'historique
+
+** Attention ** de ne pas réécrire un historique déjà partagé avec d'autres
+
+`git commit --amend` pour modifier le dernier commit et changer le messsage
+
+`git commit --amend --no-edit` pour modifier le dernier commit sans changer le message
+
+Pour modifier des commits plus anciens on utilise la commande `git rebase -i ancetre_de_reference`, ex `git rebase -i HEAD~3` pour réécrire les 3 derniers commits
+
+On bascule dans un mode interactif, ex :
+	pick 17fc345 Ajout du support PDF
+	pick c65c565 Ajout de quelques commandes sur git help, git help commande, git help concept
+	pick a14910d Modifier l'éditeur sous Windows
+
+	# Rebase c4c4044..a14910d onto c4c4044 (3 command(s))
+	#
+	# Commands:
+	# p, pick = use commit
+	# r, reword = use commit, but edit the commit message
+	# e, edit = use commit, but stop for amending
+	# s, squash = use commit, but meld into previous commit
+	# f, fixup = like "squash", but discard this commit's log message
+	# x, exec = run command (the rest of the line) using shell
+	# d, drop = remove commit
+	#
+	# These lines can be re-ordered; they are executed from top to bottom.
+	#
+	# If you remove a line here THAT COMMIT WILL BE LOST.
+	#
+	# However, if you remove everything, the rebase will be aborted.
+	#
+	# Note that empty commits are commented out
+	
+Il faudra éditer ce fichier avec : `pick` pour laisser le commit tel quel, `reword` pour changer de message, `squash` pour fusionner le commit et son ancetre (on a le droit de réorganiser les lignes pas toujours possible en cas de conflit), `fixup` idem que squash mais sans changer le message (on garde celui de l'ancetre), `drop` pour annuler un commit.
+
+On peut aussi réécrire un commit avec `edit` :
+
+  * `git reset HEAD^` pour annuler le commit et replacer les changements dans le working dir
+  * `git add fichier` ou `git add -p fichier`
+  * `git commit -m "Message"`, et éventuellement reprendre à git add
+  * `git rebase --continue` pour valider les changements ou `git rebase --abort` pour annuler les modifications en cas de bêtises
+  
+
+
+
