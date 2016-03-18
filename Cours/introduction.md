@@ -36,3 +36,16 @@ Une fois après l'installation de git penser à configurer le nom d'utilisateur 
 ## Versionner
 
 `git commit -m "Message le plus précis possible"` pour versionner les changements surveillés (ajouté) dans la staging area
+
+## Revenir à une ancienne version
+
+`git log` pour afficher les versions
+
+`git checkout ab34b25` pour revenir à la version dont l'identifiant commencer par ab34b25
+
+`git checkout master` pour revenir à la dernière version (important faire ses modifs sur la dernière version)
+
+`git checkout HEAD^` revenir à la version précédente
+
+`git checkout HEAD^^` revenir 2 versions en arrière ou  `git checkout HEAD~2`
+
