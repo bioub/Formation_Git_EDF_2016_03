@@ -17,6 +17,9 @@ Pour obtenir de l'aide sur une commande : `git help commande`
 
 Pour obtenir de l'aide sur un concept :
 `git help concept`, ex : `git help tutorial` pour reprendre les bases.
+
+Modifier l'éditeur par défault :
+`git config --global core.editor notepad` pour utiliser le bloc note Windows
 	
 ## Créer un Repository / Dépôt
 
