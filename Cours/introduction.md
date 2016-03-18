@@ -11,6 +11,13 @@ Une fois après l'installation de git penser à configurer le nom d'utilisateur 
 	git config --global user.user "Romain Bohdanowicz"
 	git config --global user.email "romain.bohdanowicz@gmail.com"
 	
+Pour obtenir de l'aide : `git help`
+	
+Pour obtenir de l'aide sur une commande : `git help commande`
+
+Pour obtenir de l'aide sur un concept :
+`git help concept`, ex : `git help tutorial` pour reprendre les bases.
+	
 ## Créer un Repository / Dépôt
 
 `git init` pour créer un dépôt vide
